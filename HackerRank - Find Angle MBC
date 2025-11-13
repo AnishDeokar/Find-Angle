@@ -1,0 +1,15 @@
+# Python solution for the classic HackerRank geometry problem “Find Angle MBC.
+
+import math
+
+AB = int(input().strip())
+BC = int(input().strip())
+
+theta_rad = math.atan(AB / BC)
+theta_deg = math.degrees(theta_rad)
+
+# Conventional rounding: 56.5 -> 57
+theta_rounded = int(theta_deg + 0.5)
+
+# print with degree symbol
+print(f"{theta_rounded}\u00b0")
